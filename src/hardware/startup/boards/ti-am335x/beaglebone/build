@@ -206,7 +206,7 @@
     #######################################################################
     ## REMOTE_DEBUG (gdb or Momentics)
     ##  - refer to the help documentation for the gdb, qconn and the IDE
-    ##    for more information on remote debugging
+    ##    for more information on remote debugging 
     ##  - the commands shown require that NETWORK is enabled too
     #######################################################################
     devc-pty
