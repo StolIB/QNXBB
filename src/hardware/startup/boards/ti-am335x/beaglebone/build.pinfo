@@ -4,5 +4,5 @@ INSTALLNAME=beaglebone.build
 NAME=build
 USER=minhn
 HOST=DESKTOP-219LV7Q
-DATE=2016/11/28-18:36:35-EST
+DATE=2016/11/28-22:33:39-EST
 DESCRIPTION=Example build file for startup-ti-am335x-beaglebone
