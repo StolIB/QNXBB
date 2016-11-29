@@ -22,3 +22,6 @@ mkrec -s32k -ffull -r ./tmp-header-ipl-am335x-beaglebone.bin > ./ipl-sd-am335x-b
 rm -f tmp*.bin
 
 echo "done!!!!!!!"
+
+
+#test edit
