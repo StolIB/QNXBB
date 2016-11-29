@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle-v7/sbin/
+INSTALLNAME=devb-sdmmc-j5_generic
+NAME=devb-sdmmc-j5_generic
+USER=minhn
+HOST=DESKTOP-219LV7Q
+DATE=2016/11/28-18:32:51-EST
+DESCRIPTION=sd/mmc disk driver

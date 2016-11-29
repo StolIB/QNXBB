@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle-v7/sbin/
+INSTALLNAME=am335x-boardid
+NAME=am335x-boardid
+USER=minhn
+HOST=DESKTOP-219LV7Q
+DATE=2016/11/28-18:36:38-EST
+DESCRIPTION=AM335X BoardId Driver

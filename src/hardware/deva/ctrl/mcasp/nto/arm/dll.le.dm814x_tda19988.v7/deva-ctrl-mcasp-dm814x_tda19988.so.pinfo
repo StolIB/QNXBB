@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle-v7/lib/dll/
+INSTALLNAME=deva-ctrl-mcasp-dm814x_tda19988.so
+NAME=deva-ctrl-mcasp-dm814x_tda19988.so
+USER=minhn
+HOST=DESKTOP-219LV7Q
+DATE=2016/11/28-18:32:44-EST
+DESCRIPTION=Driver for the TI McASP audio controller

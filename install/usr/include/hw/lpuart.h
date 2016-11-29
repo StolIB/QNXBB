@@ -1,0 +1,216 @@
+/*
+ * $QNXLicenseC:
+ * Copyright 2015, QNX Software Systems.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"). You
+ * may not reproduce, modify or distribute this software except in
+ * compliance with the License. You may obtain a copy of the License
+ * at: http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+ *
+ * This file may contain contributions from others, either as
+ * contributors under the License or as licensors under other terms.
+ * Please review this entire file for other proprietary rights or license
+ * notices, as well as the QNX Development Suite License Guide at
+ * http://licensing.qnx.com/license-guide/ for other information.
+ * $
+ */
+
+#ifndef _HW_LPUART_H_INCLUDED
+#define _HW_LPUART_H_INCLUDED
+
+#define LPUART_SIZE (32)
+
+#define LPUART_BAUD (0x0)
+    #define LPUART_BAUD_MAEN1                            (1 << 31)
+    #define LPUART_BAUD_MAEN2                            (1 << 30)
+    #define LPUART_BAUD_M10                              (1 << 29)
+    #define LPUART_BAUD_OSR_SHIFT                        (24)
+    #define LPUART_BAUD_OSR_MASK                         (0x1F << LPUART_BAUD_OSR_SHIFT)
+    #define LPUART_BAUD_OSR(n)                           (((n) << LPUART_BAUD_OSR_SHIFT) & LPUART_BAUD_OSR_MASK)
+    #define LPUART_BAUD_OSR_GET(n)                       (((n) & LPUART_BAUD_OSR_MASK) >> LPUART_BAUD_OSR_SHIFT)
+    #define LPUART_BAUD_TDMAE                            (1 << 23)
+    #define LPUART_BAUD_RDMAE                            (1 << 21)
+    #define LPUART_BAUD_MATCFG_SHIFT                     (18)
+    #define LPUART_BAUD_MATCFG_MASK                      (3 << LPUART_BAUD_MATCFG_SHIFT)
+    #define LPUART_BAUD_MATCFG(n)                        (((n) << LPUART_BAUD_MATCFG_SHIFT) & LPUART_BAUD_MATCFG_MASK)
+    #define LPUART_BAUD_MATCFG_ADDR_MATCH_WAK            (LPUART_BAUD_MATCFG(0))
+    #define LPUART_BAUD_MATCFG_IDLE_MATCH_WAK            (LPUART_BAUD_MATCFG(1))
+    #define LPUART_BAUD_MATCFG_MATCH_ON_MATCH_OFF        (LPUART_BAUD_MATCFG(2))
+    #define LPUART_BAUD_MATCFG_RWU_ON_MATCH_ON_MATCH_OFF (LPUART_BAUD_MATCFG(3))
+    #define LPUART_BAUD_BOTHEDGE                         (1 << 17)
+    #define LPUART_BAUD_RESYNCDIS                        (1 << 16)
+    #define LPUART_BAUD_LBKDIE                           (1 << 15)
+    #define LPUART_BAUD_RXEDGIE                          (1 << 14)
+    #define LPUART_BAUD_SBNS                             (1 << 13)
+    #define LPUART_BAUD_SBR_SHIFT                        (0)
+    #define LPUART_BAUD_SBR_MASK                         (0x1FFF << LPUART_BAUD_SBR_SHIFT)
+    #define LPUART_BAUD_SBR(n)                           (((n) << LPUART_BAUD_SBR_SHIFT) & LPUART_BAUD_SBR_MASK)
+    #define LPUART_BAUD_ALL_INTERRUPT_ENABLES            (LPUART_BAUD_LBKDIE | LPUART_BAUD_RXEDGIE)
+
+#define LPUART_STAT (0x4)
+    #define LPUART_STAT_LBKDIF                  (1 << 31)
+    #define LPUART_STAT_RXEDGIF                 (1 << 30)
+    #define LPUART_STAT_MSBF                    (1 << 29)
+    #define LPUART_STAT_RXINV                   (1 << 28)
+    #define LPUART_STAT_RWUD                    (1 << 27)
+    #define LPUART_STAT_BRK13                   (1 << 26)
+    #define LPUART_STAT_LBKDE                   (1 << 25)
+    #define LPUART_STAT_RAF                     (1 << 24)
+    #define LPUART_STAT_TDRE                    (1 << 23)
+    #define LPUART_STAT_TC                      (1 << 22)
+    #define LPUART_STAT_RDRF                    (1 << 21)
+    #define LPUART_STAT_IDLE                    (1 << 20)
+    #define LPUART_STAT_OR                      (1 << 19)
+    #define LPUART_STAT_NF                      (1 << 18)
+    #define LPUART_STAT_FE                      (1 << 17)
+    #define LPUART_STAT_PF                      (1 << 16)
+    #define LPUART_STAT_MA1F                    (1 << 15)
+    #define LPUART_STAT_MA2F                    (1 << 14)
+    #define LPUART_STAT_MASK_W1C_BITS           (LPUART_STAT_LBKDIF | LPUART_STAT_RXEDGIF | LPUART_STAT_IDLE |       \
+                                                 LPUART_STAT_OR | LPUART_STAT_NF | LPUART_STAT_FE | LPUART_STAT_PF | \
+                                                 LPUART_STAT_MA1F | LPUART_STAT_MA2F)
+
+#define LPUART_CTRL (0x8)
+    #define LPUART_CTRL_R8T9                    (1 << 31)
+    #define LPUART_CTRL_R9T8                    (1 << 30)
+    #define LPUART_CTRL_TXDIR                   (1 << 29)
+    #define LPUART_CTRL_TXINV                   (1 << 28)
+    #define LPUART_CTRL_ORIE                    (1 << 27)
+    #define LPUART_CTRL_NEIE                    (1 << 26)
+    #define LPUART_CTRL_FEIE                    (1 << 25)
+    #define LPUART_CTRL_PEIE                    (1 << 24)
+    #define LPUART_CTRL_TIE                     (1 << 23)
+    #define LPUART_CTRL_TCIE                    (1 << 22)
+    #define LPUART_CTRL_RIE                     (1 << 21)
+    #define LPUART_CTRL_ILIE                    (1 << 20)
+    #define LPUART_CTRL_TE                      (1 << 19)
+    #define LPUART_CTRL_RE                      (1 << 18)
+    #define LPUART_CTRL_RWU                     (1 << 17)
+    #define LPUART_CTRL_SBK                     (1 << 16)
+    #define LPUART_CTRL_MA1IE                   (1 << 15)
+    #define LPUART_CTRL_MA2IE                   (1 << 14)
+    #define LPUART_CTRL_IDLECFG_SHIFT           (8)
+    #define LPUART_CTRL_IDLECFG_MASK            (7 << LPUART_CTRL_IDLECFG_SHIFT)
+    #define LPUART_CTRL_IDLECFG(n)              (((n) << LPUART_CTRL_IDLECFG_SHIFT) & LPUART_CTRL_IDLECFG_MASK)
+    #define LPUART_CTRL_IDLECFG_1_IDLE_CH       (LPUART_CTRL_IDLECFG(0))
+    #define LPUART_CTRL_IDLECFG_2_IDLE_CH       (LPUART_CTRL_IDLECFG(1))
+    #define LPUART_CTRL_IDLECFG_4_IDLE_CH       (LPUART_CTRL_IDLECFG(2))
+    #define LPUART_CTRL_IDLECFG_8_IDLE_CH       (LPUART_CTRL_IDLECFG(3))
+    #define LPUART_CTRL_IDLECFG_16_IDLE_CH      (LPUART_CTRL_IDLECFG(4))
+    #define LPUART_CTRL_IDLECFG_32_IDLE_CH      (LPUART_CTRL_IDLECFG(5))
+    #define LPUART_CTRL_IDLECFG_64_IDLE_CH      (LPUART_CTRL_IDLECFG(6))
+    #define LPUART_CTRL_IDLECFG_128_IDLE_CH     (LPUART_CTRL_IDLECFG(7))
+    #define LPUART_CTRL_LOOPS                   (1 << 7)
+    #define LPUART_CTRL_DOZEEN                  (1 << 6)
+    #define LPUART_CTRL_RSRC                    (1 << 5)
+    #define LPUART_CTRL_M                       (1 << 4)
+    #define LPUART_CTRL_WAKE                    (1 << 3)
+    #define LPUART_CTRL_ILT                     (1 << 2)
+    #define LPUART_CTRL_PE                      (1 << 1)
+    #define LPUART_CTRL_PT                      (1 << 0)
+    #define LPUART_CTRL_PT_EVEN                 (0)
+    #define LPUART_CTRL_PT_ODD                  (LPUART_CTRL_PT)
+    #define LPUART_CTRL_ALL_INTERRUPT_ENABLES   (LPUART_CTRL_ORIE | LPUART_CTRL_NEIE | LPUART_CTRL_FEIE | \
+                                                 LPUART_CTRL_PEIE | LPUART_CTRL_TIE | LPUART_CTRL_TCIE |  \
+                                                 LPUART_CTRL_RIE | LPUART_CTRL_ILIE | LPUART_CTRL_MA1IE | \
+                                                 LPUART_CTRL_MA2IE)
+
+#define LPUART_DATA (0xC)
+    #define LPUART_DATA_NOISY                   (1 << 15)
+    #define LPUART_DATA_PARITYE                 (1 << 14)
+    #define LPUART_DATA_FRETSC                  (1 << 13)
+    #define LPUART_DATA_RXEMPT                  (1 << 12)
+    #define LPUART_DATA_IDLINE                  (1 << 11)
+    #define LPUART_DATA_R9T9                    (1 << 9)
+    #define LPUART_DATA_8BIT_MASK               (0xFF)
+    #define LPUART_DATA_9BIT_MASK               (0x1FF)
+    #define LPUART_DATA_10BIT_MASK              (0x3FF)
+    #define LPUART_DATA_GET_8BIT(n)             ((n) & LPUART_DATA_8BIT_MASK)
+    #define LPUART_DATA_GET_9BIT(n)             ((n) & LPUART_DATA_9BIT_MASK)
+    #define LPUART_DATA_GET_10BIT(n)            ((n) & LPUART_DATA_10BIT_MASK)
+
+#define LPUART_MATCH (0x10)
+    #define LPUART_MATCH_MA2_SHIFT              (16)
+    #define LPUART_MATCH_MA2_MASK               (0x3FF << LPUART_MATCH_MA2_SHIFT)
+    #define LPUART_MATCH_MA2(n)                 (((n) << LPUART_MATCH_MA2_SHIFT) & LPUART_MATCH_MA2_MASK)
+    #define LPUART_MATCH_MA1_SHIFT              (0)
+    #define LPUART_MATCH_MA1_MASK               (0x3FF << LPUART_MATCH_MA1_SHIFT)
+    #define LPUART_MATCH_MA1(n)                 (((n) << LPUART_MATCH_MA1_SHIFT) & LPUART_MATCH_MA2_MASK)
+
+#define LPUART_MODIR (0x14)
+    #define LPUART_MODIR_IREN                   (1 << 18)
+    #define LPUART_MODIR_TNP_SHIFT              (16)
+    #define LPUART_MODIR_TNP_MASK               (3 << LPUART_MODIR_TNP_SHIFT)
+    #define LPUART_MODIR_TNP(n)                 (((n) << LPUART_MODIR_TNP_SHIFT) & LPUART_MODIR_TNP_MASK)
+    #define LPUART_MODIR_RTSWATER_SHIFT         (8)
+    #define LPUART_MODIR_RTSWATER_MASK          (0xFF << LPUART_MODIR_RTSWATER_SHIFT)
+    #define LPUART_MODIR_RTSWATER(n)            (((n) << LPUART_MODIR_RTSWATER_SHIFT) & LPUART_MODIR_RTSWATER_MASK)
+    #define LPUART_MODIR_TXCTSSRC               (1 << 5)
+    #define LPUART_MODIR_TXCTSC                 (1 << 4)
+    #define LPUART_MODIR_RXRTSE                 (1 << 3)
+    #define LPUART_MODIR_TXRTSPOL               (1 << 2)
+    #define LPUART_MODIR_TXRTSE                 (1 << 1)
+    #define LPUART_MODIR_TXCTSE                 (1 << 0)
+
+#define LPUART_FIFO (0x18)
+    #define LPUART_FIFO_TXEMPT                  (1 << 23)
+    #define LPUART_FIFO_RXEMPT                  (1 << 22)
+    #define LPUART_FIFO_TXOF                    (1 << 17)
+    #define LPUART_FIFO_RXUF                    (1 << 16)
+    #define LPUART_FIFO_TXFLUSH                 (1 << 15)
+    #define LPUART_FIFO_RXFLUSH                 (1 << 14)
+    #define LPUART_FIFO_RXIDEN_SHIFT            (10)
+    #define LPUART_FIFO_RXIDEN_MASK             (7 << LPUART_FIFO_RXIDEN_SHIFT)
+    #define LPUART_FIFO_RXIDEN(n)               (((n) << LPUART_FIFO_RXIDEN_SHIFT) & LPUART_FIFO_RXIDEN_MASK)
+    #define LPUART_FIFO_RXIDEN_DISABLE          (LPUART_FIFO_RXIDEN(0))
+    #define LPUART_FIFO_RXIDEN_ENABLE_1CHAR     (LPUART_FIFO_RXIDEN(1))
+    #define LPUART_FIFO_RXIDEN_ENABLE_2CHAR     (LPUART_FIFO_RXIDEN(2))
+    #define LPUART_FIFO_RXIDEN_ENABLE_4CHAR     (LPUART_FIFO_RXIDEN(3))
+    #define LPUART_FIFO_RXIDEN_ENABLE_8CHAR     (LPUART_FIFO_RXIDEN(4))
+    #define LPUART_FIFO_RXIDEN_ENABLE_16CHAR    (LPUART_FIFO_RXIDEN(5))
+    #define LPUART_FIFO_RXIDEN_ENABLE_32CHAR    (LPUART_FIFO_RXIDEN(6))
+    #define LPUART_FIFO_RXIDEN_ENABLE_64CHAR    (LPUART_FIFO_RXIDEN(7))
+    #define LPUART_FIFO_TXOFE                   (1 << 9)
+    #define LPUART_FIFO_RXUFE                   (1 << 8)
+    #define LPUART_FIFO_TXFE                    (1 << 7)
+    #define LPUART_FIFO_TXFIFOSIZE_SHIFT        (4)
+    #define LPUART_FIFO_TXFIFOSIZE_MASK         (7 << LPUART_FIFO_TXFIFOSIZE_SHIFT)
+    #define LPUART_FIFO_TXFIFOSIZE_GET(n)       (((n) & LPUART_FIFO_TXFIFOSIZE_MASK) >> LPUART_FIFO_TXFIFOSIZE_SHIFT)
+    #define LPUART_FIFO_RXFE                    (1 << 3)
+    #define LPUART_FIFO_RXFIFOSIZE_SHIFT        (0)
+    #define LPUART_FIFO_RXFIFOSIZE_MASK         (7 << LPUART_FIFO_RXFIFOSIZE_SHIFT)
+    #define LPUART_FIFO_RXFIFOSIZE_GET(n)       (((n) & LPUART_FIFO_RXFIFOSIZE_MASK) >> LPUART_FIFO_RXFIFOSIZE_SHIFT)
+    #define LPUART_FIFO_FIFOSIZE_1_DATAWORD     (0)
+    #define LPUART_FIFO_FIFOSIZE_4_DATAWORD     (1)
+    #define LPUART_FIFO_FIFOSIZE_8_DATAWORD     (2)
+    #define LPUART_FIFO_FIFOSIZE_16_DATAWORD    (3)
+    #define LPUART_FIFO_FIFOSIZE_32_DATAWORD    (4)
+    #define LPUART_FIFO_FIFOSIZE_64_DATAWORD    (5)
+    #define LPUART_FIFO_FIFOSIZE_128_DATAWORD   (6)
+    #define LPUART_FIFO_FIFOSIZE_256_DATAWORD   (7)
+    #define LPUART_FIFO_W1C_BITS                (LPUART_FIFO_TXOF | LPUART_FIFO_RXUF)
+
+#define LPUART_WATER (0x1C)
+    #define LPUART_WATER_RXCOUNT_SHIFT          (24)
+    #define LPUART_WATER_RXCOUNT_MASK           (0xFF << LPUART_WATER_RXCOUNT_SHIFT)
+    #define LPUART_WATER_RXCOUNT_GET(n)         (((n) & LPUART_WATER_RXCOUNT_MASK) >> LPUART_WATER_RXCOUNT_SHIFT)
+    #define LPUART_WATER_RXWATER_SHIFT          (16)
+    #define LPUART_WATER_RXWATER_MASK           (0xFF << LPUART_WATER_RXWATER_SHIFT)
+    #define LPUART_WATER_RXWATER(n)             (((n) << LPUART_WATER_RXWATER_SHIFT) & LPUART_WATER_RXWATER_MASK)
+    #define LPUART_WATER_TXCOUNT_SHIFT          (8)
+    #define LPUART_WATER_TXCOUNT_MASK           (0xFF << LPUART_WATER_TXCOUNT_SHIFT)
+    #define LPUART_WATER_TXCOUNT_GET(n)         (((n) & LPUART_WATER_TXCOUNT_MASK) >> LPUART_WATER_TXCOUNT_SHIFT)
+    #define LPUART_WATER_TXWATER_SHIFT          (0)
+    #define LPUART_WATER_TXWATER_MASK           (0xFF << LPUART_WATER_TXWATER_SHIFT)
+    #define LPUART_WATER_TXWATER(n)             (((n) << LPUART_WATER_TXWATER_SHIFT) & LPUART_WATER_TXWATER_MASK)
+
+#endif
+
+#if defined(__QNXNTO__) && defined(__USESRCVERSION)
+#include <sys/srcversion.h>
+__SRCVERSION("$URL: http://svn.ott.qnx.com/product/branches/6.6.0/trunk/hardware/devc/public/hw/lpuart.h $ $Rev: 778917 $")
+#endif

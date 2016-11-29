@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle-v7/bin/
+INSTALLNAME=dm814x-wdtkick
+NAME=dm814x-wdtkick
+USER=minhn
+HOST=DESKTOP-219LV7Q
+DATE=2016/11/28-18:36:42-EST
+DESCRIPTION=Watchdog Time Module for DM814x processor

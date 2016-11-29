@@ -1,0 +1,1124 @@
+Archive member included because of file (symbol)
+
+C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+                              soc.o (hwi_find_bus)
+C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+                              C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o) (hwi_find)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_ashldi3.o)
+                              base.o (__aeabi_llsl)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_aeabi_uldivmod.o)
+                              mmc.o (__aeabi_uldivmod)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o)
+                              C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+                              C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o) (__divdi3)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+                              C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o) (__udivdi3)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+                              C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o) (__aeabi_unwind_cpp_pr0)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(libunwind.o)
+                              C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o) (restore_core_regs)
+C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+                              C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o) (__gnu_unwind_execute)
+C:/qnx660/target/qnx6/armle-v7/lib\libc.a(hwi_next_tag.o)
+                              soc.o (hwi_next_tag)
+
+Allocating common symbols
+Common symbol       size              file
+
+sdio_ctrl           0xac              base.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+LOAD C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+LOAD C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+LOAD atmel-hsmci.o
+LOAD base.o
+LOAD bs.o
+LOAD card.o
+LOAD imx6.o
+LOAD mmc.o
+LOAD omap.o
+LOAD pci.o
+LOAD pxiv.o
+LOAD rcar_mmcif.o
+LOAD rcar_sdhi.o
+LOAD sd.o
+LOAD sdhci.o
+LOAD sdhci_pci.o
+LOAD sim_assd.o
+LOAD sim_bs.o
+LOAD sim_sdmmc.o
+LOAD soc.o
+LOAD C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a
+LOAD C:/qnx660/target/qnx6/armle-v7/usr/lib\libcache.a
+LOAD C:/qnx660/target/qnx6/armle-v7/lib/libcam.so
+LOAD C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a
+LOAD C:/qnx660/target/qnx6/armle-v7/lib/libc.so
+LOAD C:/qnx660/target/qnx6/armle-v7/lib\libc.a
+LOAD C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a
+LOAD C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+LOAD C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+                0x08048000                PROVIDE (__executable_start, 0x8048000)
+                0x08048154                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x08048154       0x14
+ *(.interp)
+ .interp        0x08048154       0x14 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.note           0x08048168       0x18
+ .note          0x08048168       0x18 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+
+.note.gnu.build-id
+                0x08048180       0x20
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x08048180       0x20 linker stubs
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x080481a0      0x590
+ *(.gnu.hash)
+ .gnu.hash      0x080481a0      0x590 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.dynsym         0x08048730      0xc60
+ *(.dynsym)
+ .dynsym        0x08048730      0xc60 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.dynstr         0x08049390      0xbda
+ *(.dynstr)
+ .dynstr        0x08049390      0xbda C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.gnu.version    0x08049f6a        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.gnu.version_d  0x08049f6c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.gnu.version_r  0x08049f6c        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.rel.dyn        0x08049f6c       0x48
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x08049f6c       0x30 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x08049f9c       0x18 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x08049fb4                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x08049fb4                PROVIDE (__rel_iplt_end, .)
+                0x08049fb4                PROVIDE (__rela_iplt_start, .)
+                0x08049fb4                PROVIDE (__rela_iplt_end, .)
+
+.rela.dyn       0x08049fb4        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                0x08049fb4                PROVIDE (__rel_iplt_start, .)
+                0x08049fb4                PROVIDE (__rel_iplt_end, .)
+                0x08049fb4                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                0x08049fb4                PROVIDE (__rela_iplt_end, .)
+
+.rel.plt        0x08049fb4      0x400
+ *(.rel.plt)
+ .rel.plt       0x08049fb4      0x400 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x0804a3b4        0x8
+ *(SORT(.init))
+ .init          0x0804a3b4        0x4 C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+                0x0804a3b4                _init
+ .init          0x0804a3b8        0x4 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+
+.plt            0x0804a3bc      0x638
+ *(.plt)
+ .plt           0x0804a3bc      0x638 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x0804a3d0                clock_gettime
+                0x0804a3dc                iofunc_client_info_ext_free
+                0x0804a3e8                strcpy
+                0x0804a3f8                cam_configure
+                0x0804a404                pthread_cond_signal
+                0x0804a410                _init_array
+                0x0804a41c                simq_reset_dev
+                0x0804a428                pthread_create
+                0x0804a434                rsrcdbmgr_detach
+                0x0804a440                strerror
+                0x0804a44c                pthread_attr_init
+                0x0804a458                hwi_off2tag
+                0x0804a464                memmove
+                0x0804a470                snprintf
+                0x0804a47c                munmap
+                0x0804a488                sim_alloc_hba
+                0x0804a494                timer_create
+                0x0804a4a0                hwi_find_item
+                0x0804a4ac                pthread_setname_np
+                0x0804a4c4                pthread_condattr_init
+                0x0804a4d0                _preinit_array
+                0x0804a4dc                InterruptUnmask
+                0x0804a4e8                memcpy
+                0x0804a4f4                pthread_condattr_setclock
+                0x0804a500                __cxa_finalize
+                0x0804a50c                timer_delete
+                0x0804a518                cam_set_thread_state
+                0x0804a524                confstr
+                0x0804a530                vsnprintf
+                0x0804a53c                mmap_device_io
+                0x0804a548                mmap
+                0x0804a554                abort
+                0x0804a560                __stack_chk_fail
+                0x0804a56c                strtol
+                0x0804a578                vslogf
+                0x0804a584                xpt_bus_deregister
+                0x0804a594                MsgSendPulse
+                0x0804a5a0                iofunc_client_info_able
+                0x0804a5ac                calloc
+                0x0804a5b8                atomic_clr
+                0x0804a5c4                pthread_condattr_destroy
+                0x0804a5d0                simq_rel_simq
+                0x0804a5dc                ConnectDetach
+                0x0804a5e8                nanospin_ns
+                0x0804a600                __aeabi_idiv
+                0x0804a60c                pthread_attr_setinheritsched
+                0x0804a618                __get_errno_ptr
+                0x0804a624                strstr
+                0x0804a630                pthread_attr_setstacksize
+                0x0804a63c                strlcpy
+                0x0804a648                strncmp
+                0x0804a654                strncpy
+                0x0804a66c                sched_get_priority_max
+                0x0804a678                pthread_cond_init
+                0x0804a684                strtok
+                0x0804a690                memcmp
+                0x0804a69c                sched_get_priority_min
+                0x0804a6a8                ConnectAttach
+                0x0804a6b4                simq_ccb_enqueue
+                0x0804a6c0                __aeabi_ldiv0
+                0x0804a6cc                MsgReceivePulse
+                0x0804a6dc                strdup
+                0x0804a6e8                ChannelDestroy
+                0x0804a6f4                procmgr_ability_create
+                0x0804a700                strtoull
+                0x0804a70c                _init_libc
+                0x0804a718                memset
+                0x0804a724                cam_slogf
+                0x0804a730                __aeabi_uidiv
+                0x0804a73c                cam_create_thread
+                0x0804a748                TraceEvent
+                0x0804a754                InterruptAttach
+                0x0804a760                ChannelCreate
+                0x0804a76c                pthread_sleepon_signal
+                0x0804a778                _fini_array
+                0x0804a784                pthread_sleepon_wait
+                0x0804a790                strcmp
+                0x0804a7a0                pthread_mutex_unlock
+                0x0804a7ac                __gnu_Unwind_Find_exidx
+                0x0804a7bc                delay
+                0x0804a7c8                xpt_async
+                0x0804a7d4                sprintf
+                0x0804a7e0                simq_post_ccb
+                0x0804a7ec                atexit
+                0x0804a7f8                ThreadCtl
+                0x0804a804                getsubopt
+                0x0804a814                xpt_vtop_sg
+                0x0804a820                rsrcdbmgr_attach
+                0x0804a82c                __hwi_find_string
+                0x0804a838                fputc
+                0x0804a844                simq_ccb_dequeue
+                0x0804a850                sim_drvr_options
+                0x0804a85c                simq_scsi_reset
+                0x0804a868                __aeabi_uidivmod
+                0x0804a878                xpt_free
+                0x0804a884                pthread_mutex_destroy
+                0x0804a890                munmap_device_io
+                0x0804a89c                pthread_mutex_lock
+                0x0804a8a8                xpt_bus_register
+                0x0804a8b4                pthread_cond_wait
+                0x0804a8c0                nsec2timespec
+                0x0804a8cc                simq_dinit
+                0x0804a8d8                pthread_sleepon_unlock
+                0x0804a8e8                xpt_vtop
+                0x0804a8f4                exit
+                0x0804a900                sim_free_hba
+                0x0804a90c                pthread_cond_destroy
+                0x0804a918                pthread_attr_setschedpolicy
+                0x0804a924                pthread_mutex_init
+                0x0804a930                strlen
+                0x0804a93c                InterruptDetach
+                0x0804a948                simq_init
+                0x0804a954                pthread_attr_setschedparam
+                0x0804a960                pthread_sleepon_lock
+                0x0804a96c                pthread_join
+                0x0804a978                timer_settime
+                0x0804a984                pthread_cond_timedwait
+                0x0804a99c                cam_parse_number
+                0x0804a9a8                xpt_alloc
+                0x0804a9b8                atomic_set
+                0x0804a9c4                vfprintf
+                0x0804a9d0                InterruptAttachEvent
+                0x0804a9dc                free
+                0x0804a9e8                _syspage_time
+
+.iplt           0x0804a9f4        0x0
+ *(.iplt)
+ .iplt          0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+
+.text           0x0804a9f8     0xd23c
+                0x0804a9f8                _btext = .
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup  0x0804a9f8       0xe8 sim_sdmmc.o
+                0x0804a9f8                main
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0804aae0      0x110 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x0804aae0                _start
+ .text          0x0804abf0        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+ .text          0x0804abf0      0x114 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .text          0x0804ad04        0x0 atmel-hsmci.o
+ .text          0x0804ad04     0x25fc base.o
+                0x0804ad2c                sdio_trace_event
+                0x0804ad74                sdio_slogf
+                0x0804add0                sdio_dump
+                0x0804aee8                fls
+                0x0804aefc                sdio_alloc
+                0x0804af12                sdio_free
+                0x0804af16                sdio_hc_alloc
+                0x0804af7c                sdio_hc_free
+                0x0804afa4                sdio_vtop_sg
+                0x0804afa8                sdio_vtop
+                0x0804afae                sdio_module_args
+                0x0804afec                sdio_parse_number
+                0x0804b03c                sdio_strchr
+                0x0804b07c                sdio_parse_tuple
+                0x0804b0e0                sdio_set_thread_state
+                0x0804b0fa                sdio_create_thread
+                0x0804b1a4                sdio_extract_bits
+                0x0804b1ec                sdio_sg_start
+                0x0804b20c                sdio_device_errata
+                0x0804b2ac                sdio_reconcile_errata
+                0x0804b2f4                sdio_pwr
+                0x0804b350                sdio_drv_type
+                0x0804b398                sdio_bus_mode
+                0x0804b3e4                sdio_bus_width
+                0x0804b41c                sdio_clock
+                0x0804b468                sdio_timing
+                0x0804b4ac                sdio_signal_voltage
+                0x0804b4f0                sdio_select_voltage
+                0x0804b524                sdio_tune
+                0x0804b534                sdio_preset
+                0x0804b59a                sdio_power
+                0x0804b5b0                sdio_erase_timeout
+                0x0804b5de                _sdio_reset
+                0x0804b680                sdio_retune
+                0x0804b704                sdio_wait_cmd
+                0x0804b7c4                sdio_issue_cmd
+                0x0804b878                sdio_cmd_cmplt
+                0x0804b8f8                _sdio_send_cmd
+                0x0804b9e8                sdio_all_send_cid
+                0x0804ba36                sdio_go_idle
+                0x0804ba6e                _sdio_set_block_count
+                0x0804baa8                _sdio_set_block_length
+                0x0804bb0e                _sdio_stop_transmission
+                0x0804bb56                sdio_select_card
+                0x0804bba6                _sdio_pwrmgnt
+                0x0804bd74                sdio_send_csd
+                0x0804bdc2                _sdio_send_status
+                0x0804be2a                _sdio_wait_card_status
+                0x0804bef4                _sdio_lock_unlock
+                0x0804c010                _sdio_bus_error
+                0x0804c070                _sdio_attach
+                0x0804c134                sdio_cd_info
+                0x0804c3dc                sdio_event
+                0x0804c42c                sdio_cd
+                0x0804c5d0                sdio_cd_thread
+                0x0804c6c8                sdio_hc_event
+                0x0804c6e8                sdio_hc_thread
+                0x0804c820                sdio_timer_settime
+                0x0804c878                sdio_options
+                0x0804ce60                sdio_hc_dinit
+                0x0804ceca                sdio_hc_lookup
+                0x0804cf74                sdio_hc_init
+                0x0804d06c                sdio_cd_dinit
+                0x0804d0ba                sdio_dinit
+                0x0804d0ee                sdio_init
+                0x0804d174                _sdio_disconnect
+                0x0804d1b0                _sdio_connect
+ .text          0x0804d300      0x47c bs.o
+                0x0804d760                bs_set_ldo
+                0x0804d764                bs_event
+ .text          0x0804d77c      0x770 card.o
+                0x0804d77c                _sdio_synchronize
+                0x0804d7f0                sdio_device_lookup
+                0x0804d828                sdio_client_hdl
+                0x0804d82c                sdio_bs_hdl
+                0x0804d836                sdio_get_cid
+                0x0804d83c                sdio_get_raw_cid
+                0x0804d842                sdio_get_csd
+                0x0804d848                sdio_get_raw_csd
+                0x0804d850                sdio_get_ecsd
+                0x0804d856                sdio_get_raw_ecsd
+                0x0804d85e                sdio_get_raw_scr
+                0x0804d866                sdio_verbosity
+                0x0804d872                sdio_alloc_cmd
+                0x0804d8b8                sdio_free_cmd
+                0x0804d8e4                sdio_cmd_status
+                0x0804d902                sdio_setup_cmd
+                0x0804d90c                sdio_setup_cmd_io
+                0x0804d928                sdio_send_cmd
+                0x0804d964                sdio_stop_transmission
+                0x0804d990                sdio_set_partition
+                0x0804d9c4                sdio_set_block_count
+                0x0804d9f0                sdio_set_block_length
+                0x0804da1c                sdio_sd_switch
+                0x0804da58                sdio_mmc_switch
+                0x0804da98                sdio_send_ext_csd
+                0x0804dac4                sdio_wait_card_status
+                0x0804db00                sdio_send_status
+                0x0804db30                sdio_hc_info
+                0x0804db76                sdio_dev_info
+                0x0804dc6a                sdio_flush_cache
+                0x0804dc8a                sdio_erase
+                0x0804dcec                sdio_lock_unlock
+                0x0804dd30                sdio_bus_error
+                0x0804dd56                sdio_reset
+                0x0804dd7e                sdio_idle
+                0x0804dd9e                sdio_pwrmgnt
+                0x0804ddca                sdio_detach
+                0x0804de08                sdio_attach
+                0x0804dec4                sdio_disconnect
+                0x0804dec8                sdio_connect
+ .text          0x0804deec        0x0 imx6.o
+ .text          0x0804deec     0x11d0 mmc.o
+                0x0804deec                mmc_parse_cid
+                0x0804e004                mmc_parse_csd
+                0x0804e1f0                mmc_parse_ext_csd
+                0x0804e49c                mmc_wp_grp_size
+                0x0804e4da                mmc_erase_grp_size
+                0x0804e504                mmc_switch
+                0x0804e570                mmc_set_partition
+                0x0804e598                mmc_sleep_awake
+                0x0804e612                mmc_erase_timeout
+                0x0804e6c0                mmc_erase
+                0x0804e7b0                mmc_send_ext_csd
+                0x0804e858                mmc_set_relative_addr
+                0x0804e894                mmc_send_op_cond
+                0x0804e904                mmc_bus_test
+                0x0804ea18                mmc_bus_width
+                0x0804ea8a                mmc_init_hs
+                0x0804eb00                mmc_init_hs200
+                0x0804ec50                mmc_init_ddr
+                0x0804ed14                mmc_init_bus
+                0x0804ee30                mmc_init_device
+                0x0804efe4                mmc_bus_error
+                0x0804f074                mmc_ident
+ *fill*         0x0804f0bc        0x4 
+ .text          0x0804f0c0     0x1ee8 omap.o
+                0x0804f0c0                omap_sdma_intr
+                0x0805010c                omap_sdma_event
+                0x08050484                omap_sdma_init
+                0x08050648                omap_sdma_dinit
+                0x080506bc                omap_dinit
+                0x08050760                omap_dma_init
+                0x08050870                omap_init
+ .text          0x08050fa8        0x0 pci.o
+ .text          0x08050fa8        0x0 pxiv.o
+ .text          0x08050fa8        0x0 rcar_mmcif.o
+ .text          0x08050fa8        0x0 rcar_sdhi.o
+ .text          0x08050fa8     0x138c sd.o
+                0x08050fa8                sd_parse_cid
+                0x08051034                sd_parse_csd
+                0x08051234                sd_parse_scr
+                0x080512e0                sdio_send_relative_addr
+                0x0805133c                sd_voltage_switch
+                0x08051376                sd_switch
+                0x08051468                sd_app_cmd
+                0x080514aa                sd_app_send_scr
+                0x08051548                sd_app_sd_status
+                0x080515f0                sd_erase_grp_size
+                0x08051616                sd_erase_timeout
+                0x0805162e                sd_erase
+                0x08051738                sd_send_if_cond
+                0x08051790                sd_app_send_op_cond
+                0x08051838                sd_read_switch
+                0x08051918                sd_read_status
+                0x08051a0c                sd_switch_hs
+                0x08051a84                sd_app_set_bus_width
+                0x08051ac0                sd_set_bus_width
+                0x08051b3c                sd_set_drv_type
+                0x08051c20                sd_set_bus_speed_mode
+                0x08051ccc                sd_set_current_limit
+                0x08051d7c                sd_init_assd
+                0x08051dec                sd_select_bus_mode
+                0x08051e22                sd_init_uhs
+                0x08051eac                sd_init_bus
+                0x08051f9c                sd_capabilities
+                0x08051fe0                sd_lock_unlock
+                0x08052038                sd_unlock
+                0x08052080                sd_init_device
+                0x08052230                sd_bus_error
+                0x080522e0                sd_ident
+ .text          0x08052334        0x0 sdhci.o
+ .text          0x08052334        0x0 sdhci_pci.o
+ .text          0x08052334      0x620 sim_assd.o
+                0x0805259c                sdmmc_assd_control_devctl
+                0x08052634                sdmmc_assd_status_devctl
+                0x08052660                sdmmc_assd_properties_devctl
+                0x0805268e                sdmmc_assd_apdu_devctl
+                0x0805293c                sdmmc_assd_init
+ .text          0x08052954       0x40 sim_bs.o
+                0x08052954                sim_bs_args
+ .text          0x08052994     0x2d7c sim_sdmmc.o
+                0x08052994                sdmmc_sim_init
+                0x080529fc                sdmmc_alloc_hba
+                0x08052a68                sdmmc_sim_args
+                0x08052c78                sdmmc_free_hba
+                0x08052cac                sdmmc_partition_enum
+                0x08052e20                sdmmc_partition_config
+                0x08052ea0                sdmmc_display_ccb
+                0x08053120                sdmmc_reg
+                0x080531f8                sdmmc_sdio_event
+                0x0805325c                sdmmc_post_ccb
+                0x0805326e                sdmmc_sense
+                0x080532bc                sdmmc_error
+                0x0805332e                sdmmc_unit_ready
+                0x08053372                sdmmc_msense
+                0x080533ce                sdmmc_evpd_inquiry
+                0x080534cc                sdmmc_std_inquiry
+                0x08053574                sdmmc_inquiry
+                0x08053584                sdmmc_spindle
+                0x080535aa                sdmmc_capacity
+                0x080535de                sdmmc_write_same
+                0x08053ab2                sdmmc_erase12
+                0x08053c04                sdmmc_sync
+                0x08053c30                sdmmc_timer_settime
+                0x08053cac                sdmmc_pm
+                0x08053d48                sdmmc_pwroff_notify
+                0x08053df0                sdmmc_detach
+                0x08053e5a                sdmmc_sim_detach
+                0x08053e90                sdmmc_sdio_removal
+                0x08053eec                sdmmc_bkops_cfg
+                0x08053f48                sdmmc_attach
+                0x08054004                sdmmc_sim_attach
+                0x08054100                sdmmc_sdio_insertion
+                0x08054158                sdmmc_bkops
+                0x08054220                sdmmc_write_protect
+                0x080544a0                sdmmc_rw
+                0x0805477a                sdmmc_read_write
+                0x080548cc                sdmmc_dsn_devctl
+                0x0805490c                sdmmc_wp_devctl
+                0x080549c8                sdmmc_erase_devctl
+                0x08054bc8                sdmmc_lock_unlock_devctl
+                0x08054c24                sdmmc_card_register_devctl
+                0x08054cf4                sdmmc_verbosity_devctl
+                0x08054d1c                sdmmc_dsm
+                0x08054d9e                sdmmc_dsm_devctl
+                0x08054e32                sdmmc_part_info_devctl
+                0x08054f1c                sdmmc_pwr_mgnt_devctl
+                0x08054fcc                sdmmc_devctl
+                0x0805516c                sdmmc_scsi_io
+                0x0805527a                sdmmc_start_ccb
+                0x08055338                sdmmc_timer
+                0x080553e8                sdmmc_driver_thread
+                0x0805556c                sdmmc_reset_bus
+                0x08055590                sdmmc_reset_dev
+                0x080555b4                sdmmc_rel_simq
+                0x080555d2                sdmmc_term_io
+                0x080555d6                sdmmc_path_inq
+                0x08055654                sdmmc_sim_action
+ .text          0x08055710      0x1f8 soc.o
+                0x08055710                sdio_soc_hwi
+                0x0805571c                sdio_soc_config
+                0x0805587c                sdio_soc_scan
+                0x080558d0                sdio_soc_device
+ .text          0x08055908       0x30 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+                0x08055908                hwi_find_bus
+ .text          0x08055938       0x88 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+                0x08055938                hwi_find
+ .text          0x080559c0       0x1c C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_ashldi3.o)
+                0x080559c0                __aeabi_llsl
+                0x080559c0                __ashldi3
+ .text          0x080559dc       0x3c C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_aeabi_uldivmod.o)
+                0x080559dc                __aeabi_uldivmod
+ .text          0x08055a18       0x78 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o)
+                0x08055a18                __gnu_ldivmod_helper
+                0x08055a54                __gnu_uldivmod_helper
+ .text          0x08055a90      0x4c8 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+                0x08055a90                __divdi3
+ .text          0x08055f58      0x464 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+                0x08055f58                __udivdi3
+ .text          0x080563bc      0xeb0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+                0x0805679c                __aeabi_unwind_cpp_pr2
+                0x080567a4                __aeabi_unwind_cpp_pr1
+                0x080567ac                __aeabi_unwind_cpp_pr0
+                0x08056c1c                _Unwind_GetCFA
+                0x08056c24                __gnu_Unwind_RaiseException
+                0x08056cc8                __gnu_Unwind_ForcedUnwind
+                0x08056cec                __gnu_Unwind_Resume
+                0x08056d60                __gnu_Unwind_Resume_or_Rethrow
+                0x08056d80                _Unwind_Complete
+                0x08056d84                _Unwind_DeleteException
+                0x08056da4                __gnu_Unwind_Backtrace
+                0x08056e5c                _Unwind_VRS_Get
+                0x08056ea0                _Unwind_VRS_Set
+                0x08056ee4                _Unwind_VRS_Pop
+ .text          0x0805726c      0x1a8 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(libunwind.o)
+                0x0805726c                __restore_core_regs
+                0x0805726c                restore_core_regs
+                0x08057280                __gnu_Unwind_Restore_VFP
+                0x08057288                __gnu_Unwind_Save_VFP
+                0x08057290                __gnu_Unwind_Restore_VFP_D
+                0x08057298                __gnu_Unwind_Save_VFP_D
+                0x080572a0                __gnu_Unwind_Restore_VFP_D_16_to_31
+                0x080572a8                __gnu_Unwind_Save_VFP_D_16_to_31
+                0x080572b0                __gnu_Unwind_Restore_WMMXD
+                0x080572f4                __gnu_Unwind_Save_WMMXD
+                0x08057338                __gnu_Unwind_Restore_WMMXC
+                0x0805734c                __gnu_Unwind_Save_WMMXC
+                0x08057360                ___Unwind_RaiseException
+                0x08057360                _Unwind_RaiseException
+                0x08057384                _Unwind_Resume
+                0x08057384                ___Unwind_Resume
+                0x080573a8                _Unwind_Resume_or_Rethrow
+                0x080573a8                ___Unwind_Resume_or_Rethrow
+                0x080573cc                _Unwind_ForcedUnwind
+                0x080573cc                ___Unwind_ForcedUnwind
+                0x080573f0                ___Unwind_Backtrace
+                0x080573f0                _Unwind_Backtrace
+ .text          0x08057414      0x7c4 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+                0x08057414                __gnu_unwind_execute
+                0x08057b1c                __gnu_unwind_frame
+                0x08057b5c                _Unwind_GetRegionStart
+                0x08057b8c                _Unwind_GetLanguageSpecificData
+                0x08057bc8                _Unwind_GetDataRelBase
+                0x08057bd0                _Unwind_GetTextRelBase
+ .text          0x08057bd8       0x5c C:/qnx660/target/qnx6/armle-v7/lib\libc.a(hwi_next_tag.o)
+                0x08057bd8                hwi_next_tag
+ .text          0x08057c34        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+ .text          0x08057c34        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini           0x08057c34        0x8
+ *(SORT(.fini))
+ .fini          0x08057c34        0x4 C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+                0x08057c34                _fini
+ .fini          0x08057c38        0x4 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+                0x08057c3c                PROVIDE (__etext, .)
+                0x08057c3c                PROVIDE (_etext, .)
+                0x08057c3c                PROVIDE (etext, .)
+
+.rodata         0x08057c3c     0x1b46
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x08057c3c      0x314 base.o
+                0x08057e90                sdio_tbp_8bit
+                0x08057f10                sdio_tbp_4bit
+ .rodata.str1.1
+                0x08057f50      0x793 base.o
+                                0x7cc (size before relaxing)
+ .rodata        0x080586e3       0x2a bs.o
+ .rodata.str1.1
+                0x0805870d       0xa7 bs.o
+                                 0xb0 (size before relaxing)
+ .rodata        0x080587b4      0x104 mmc.o
+                0x080587b4                mmc_tran_speed_mf
+                0x080587f4                mmc_tran_speed_fu
+                0x0805885c                mmc_tacc_mf
+                0x0805889c                mmc_tacc_tu
+ .rodata.str1.1
+                0x080588b8      0x14c mmc.o
+ .rodata        0x08058a04       0xdc omap.o
+ .rodata.str1.1
+                0x08058ae0      0x429 omap.o
+ *fill*         0x08058f09        0x3 
+ .rodata        0x08058f0c      0x180 sd.o
+                0x08058f0c                sd_tran_speed_mf
+                0x08058f4c                sd_tran_speed_fu
+                0x08059030                sd_tacc_mf
+                0x08059070                sd_tacc_tu
+ .rodata.str1.1
+                0x0805908c       0xdb sd.o
+ .rodata        0x08059167        0xe sim_assd.o
+ .rodata.str1.1
+                0x08059175       0x39 sim_assd.o
+ *fill*         0x080591ae        0x2 
+ .rodata        0x080591b0       0xf8 sim_sdmmc.o
+                0x080591cc                sim_module
+ .rodata.str1.1
+                0x080592a8      0x472 sim_sdmmc.o
+                                0x4ae (size before relaxing)
+ .rodata        0x0805971a       0x10 soc.o
+ .rodata.str1.1
+                0x0805972a       0x4c soc.o
+                                 0x59 (size before relaxing)
+ .rodata.str1.1
+                0x08059776        0x4 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+ .rodata.str1.1
+                0x0805977a        0x8 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x08059784       0x18
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab     0x08059784        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+ .ARM.extab     0x08059784        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+ .ARM.extab     0x08059784       0x18 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+ .ARM.extab     0x0805979c        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+                0x0805979c                __exidx_start = .
+
+.ARM.exidx      0x0805979c       0xa8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0805979c        0x8 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+ .ARM.exidx     0x080597a4        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+                                  0x8 (size before relaxing)
+ .ARM.exidx     0x080597a4       0x88 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+                                 0xa0 (size before relaxing)
+ .ARM.exidx     0x0805982c       0x18 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+                                 0x30 (size before relaxing)
+                0x08059844                __exidx_end = .
+
+.eh_frame_hdr   0x08059844        0x0
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+
+.eh_frame       0x08059844        0x4
+ *(.eh_frame)
+ .eh_frame      0x08059844        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .eh_frame      0x08059844        0x4 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x08059848                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0805af1c                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0805af1c        0x0
+                0x0805af1c                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0805af1c                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0805af1c        0x4
+                0x0805af1c                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0805af1c        0x4 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+                0x0805af20                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0805af20        0x4
+                0x0805af20                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x0805af20        0x4 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+                0x0805af24                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x0805af24        0x4
+ *(.jcr)
+ .jcr           0x0805af24        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .jcr           0x0805af24        0x4 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0805af28       0xd8
+ *(.dynamic)
+ .dynamic       0x0805af28       0xd8 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x0805af28                _DYNAMIC
+                0x0805b000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x0805b000      0x224
+ *(.got.plt)
+ .got.plt       0x0805b000      0x20c C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x0805b000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+ *(.got)
+ .got           0x0805b20c       0x18 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+ *(.igot)
+
+.data           0x0805b224      0x2cc
+                0x0805b224                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0805b224        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+ .data          0x0805b224        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+ .data          0x0805b224        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .data.rel      0x0805b224        0x4 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+                0x0805b224                __dso_handle
+ .data          0x0805b228        0x0 atmel-hsmci.o
+ .data          0x0805b228       0x48 base.o
+ .data          0x0805b270       0x60 bs.o
+                0x0805b2a4                sdio_vendors
+                0x0805b2bc                sdio_ti_products
+ .data          0x0805b2d0        0x0 card.o
+ .data          0x0805b2d0        0x0 imx6.o
+ .data          0x0805b2d0       0xd0 mmc.o
+                0x0805b2d0                mmc_errata
+ .data          0x0805b3a0       0xf0 omap.o
+                0x0805b3a0                omap5_es2_info
+                0x0805b3e8                omap5_es1_info
+                0x0805b430                dra7xx_info
+                0x0805b46c                omap4_info
+ .data          0x0805b490        0x0 pci.o
+ .data          0x0805b490        0x0 pxiv.o
+ .data          0x0805b490        0x0 rcar_mmcif.o
+ .data          0x0805b490        0x0 rcar_sdhi.o
+ .data          0x0805b490       0x38 sd.o
+                0x0805b490                sd_errata
+ .data          0x0805b4c8        0x0 sdhci.o
+ .data          0x0805b4c8        0x0 sdhci_pci.o
+ .data          0x0805b4c8        0x0 sim_assd.o
+ .data          0x0805b4c8        0x0 sim_bs.o
+ .data          0x0805b4c8       0x28 sim_sdmmc.o
+                0x0805b4e8                sdmmc_sim_entry
+ .data          0x0805b4f0        0x0 soc.o
+ .data          0x0805b4f0        0x0 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_ashldi3.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(libunwind.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/target/qnx6/armle-v7/lib\libc.a(hwi_next_tag.o)
+ .data          0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+ .data          0x0805b4f0        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+
+.tm_clone_table
+                0x0805b4f0        0x0
+ .tm_clone_table
+                0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .tm_clone_table
+                0x0805b4f0        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+
+.data1
+ *(.data1)
+                0x0805b4f0                _edata = .
+                0x0805b4f0                PROVIDE (edata, .)
+                0x0805b4f0                . = .
+                0x0805b4f0                __bss_start = .
+                0x0805b4f0                __bss_start__ = .
+
+.bss            0x0805b4f0      0x14c
+ *(.dynbss)
+ .dynbss        0x0805b4f0       0x58 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+                0x0805b4f0                __stack_chk_guard
+                0x0805b4f4                errno
+                0x0805b4f8                _Stderr
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0805b548        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+ .bss           0x0805b548        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+ .bss           0x0805b548       0x1c C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .bss           0x0805b564        0x0 atmel-hsmci.o
+ .bss           0x0805b564        0x0 base.o
+ .bss           0x0805b564        0x0 bs.o
+ .bss           0x0805b564        0x0 card.o
+ .bss           0x0805b564        0x0 imx6.o
+ .bss           0x0805b564        0x0 mmc.o
+ .bss           0x0805b564        0x0 omap.o
+ .bss           0x0805b564        0x0 pci.o
+ .bss           0x0805b564        0x0 pxiv.o
+ .bss           0x0805b564        0x0 rcar_mmcif.o
+ .bss           0x0805b564        0x0 rcar_sdhi.o
+ .bss           0x0805b564        0x0 sd.o
+ .bss           0x0805b564        0x0 sdhci.o
+ .bss           0x0805b564        0x0 sdhci_pci.o
+ .bss           0x0805b564        0x0 sim_assd.o
+ .bss           0x0805b564        0x4 sim_bs.o
+ .bss           0x0805b568       0x28 sim_sdmmc.o
+                0x0805b568                sdmmc_ctrl
+ .bss           0x0805b590        0x0 soc.o
+ .bss           0x0805b590        0x0 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+ .bss           0x0805b590        0x0 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_ashldi3.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(libunwind.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+ .bss           0x0805b590        0x0 C:/qnx660/target/qnx6/armle-v7/lib\libc.a(hwi_next_tag.o)
+ .bss           0x0805b590        0x0 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+ .bss           0x0805b590        0x0 C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+ *(COMMON)
+ COMMON         0x0805b590       0xac base.o
+                0x0805b590                sdio_ctrl
+                0x0805b63c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0805b63c                _bss_end__ = .
+                0x0805b63c                __bss_end__ = .
+                0x0805b63c                . = ALIGN (0x4)
+                0x0805b63c                . = SEGMENT_START ("ldata-segment", .)
+                0x0805b63c                . = ALIGN (0x4)
+                0x0805b63c                __end__ = .
+                0x0805b63c                _end = .
+                0x0805b63c                PROVIDE (end, .)
+                0x0805b63c                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 atmel-hsmci.o
+ .comment       0x00000000       0x12 base.o
+ .comment       0x00000000       0x12 bs.o
+ .comment       0x00000000       0x12 card.o
+ .comment       0x00000000       0x12 imx6.o
+ .comment       0x00000000       0x12 mmc.o
+ .comment       0x00000000       0x12 omap.o
+ .comment       0x00000000       0x12 pci.o
+ .comment       0x00000000       0x12 pxiv.o
+ .comment       0x00000000       0x12 rcar_mmcif.o
+ .comment       0x00000000       0x12 rcar_sdhi.o
+ .comment       0x00000000       0x12 sd.o
+ .comment       0x00000000       0x12 sdhci.o
+ .comment       0x00000000       0x12 sdhci_pci.o
+ .comment       0x00000000       0x12 sim_assd.o
+ .comment       0x00000000       0x12 sim_bs.o
+ .comment       0x00000000       0x12 sim_sdmmc.o
+ .comment       0x00000000       0x12 soc.o
+ .comment       0x00000000       0x12 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+ .comment       0x00000000       0x12 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+ .comment       0x00000000       0x12 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o)
+ .comment       0x00000000       0x12 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+ .comment       0x00000000       0x12 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+ .comment       0x00000000       0x12 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+ .comment       0x00000000       0x12 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+ .comment       0x00000000       0x12 C:/qnx660/target/qnx6/armle-v7/lib\libc.a(hwi_next_tag.o)
+ .comment       0x00000000       0x12 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x1f C:/qnx660/target/qnx6/armle-v7/lib/crt1.o
+ .ARM.attributes
+                0x0000001f       0x1f C:/qnx660/target/qnx6/armle-v7/lib/crti.o
+ .ARM.attributes
+                0x0000003e       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtbegin.o
+ .ARM.attributes
+                0x00000071       0x33 atmel-hsmci.o
+ .ARM.attributes
+                0x000000a4       0x33 base.o
+ .ARM.attributes
+                0x000000d7       0x33 bs.o
+ .ARM.attributes
+                0x0000010a       0x33 card.o
+ .ARM.attributes
+                0x0000013d       0x33 imx6.o
+ .ARM.attributes
+                0x00000170       0x33 mmc.o
+ .ARM.attributes
+                0x000001a3       0x33 omap.o
+ .ARM.attributes
+                0x000001d6       0x33 pci.o
+ .ARM.attributes
+                0x00000209       0x33 pxiv.o
+ .ARM.attributes
+                0x0000023c       0x33 rcar_mmcif.o
+ .ARM.attributes
+                0x0000026f       0x33 rcar_sdhi.o
+ .ARM.attributes
+                0x000002a2       0x33 sd.o
+ .ARM.attributes
+                0x000002d5       0x33 sdhci.o
+ .ARM.attributes
+                0x00000308       0x33 sdhci_pci.o
+ .ARM.attributes
+                0x0000033b       0x33 sim_assd.o
+ .ARM.attributes
+                0x0000036e       0x33 sim_bs.o
+ .ARM.attributes
+                0x000003a1       0x33 sim_sdmmc.o
+ .ARM.attributes
+                0x000003d4       0x33 soc.o
+ .ARM.attributes
+                0x00000407       0x33 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find_bus.o)
+ .ARM.attributes
+                0x0000043a       0x33 C:/qnx660/target/qnx6/armle-v7/usr/lib\libdrvr.a(hwi_find.o)
+ .ARM.attributes
+                0x0000046d       0x21 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_ashldi3.o)
+ .ARM.attributes
+                0x0000048e       0x21 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x000004af       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x000004e2       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000515       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x00000548       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(unwind-arm.o)
+ .ARM.attributes
+                0x0000057b       0x21 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(libunwind.o)
+ .ARM.attributes
+                0x0000059c       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//libgcc.a(pr-support.o)
+ .ARM.attributes
+                0x000005cf       0x33 C:/qnx660/target/qnx6/armle-v7/lib\libc.a(hwi_next_tag.o)
+ .ARM.attributes
+                0x00000602       0x33 C:/qnx660/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.6.0eabi/4.7.3//crtend.o
+ .ARM.attributes
+                0x00000635       0x1f C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(W:/QNXProjects/BB_BSP_JBN574/src/hardware/devb/sdmmc/arm/j5_generic.le.v7/devb-sdmmc-j5_generic elf32-littlearm)

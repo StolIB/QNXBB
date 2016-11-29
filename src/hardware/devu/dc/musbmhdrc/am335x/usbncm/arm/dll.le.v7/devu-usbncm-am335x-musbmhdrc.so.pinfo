@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle-v7/lib/dll/
+INSTALLNAME=devu-usbncm-am335x-musbmhdrc.so
+NAME=devu-usbncm-am335x-musbmhdrc.so
+USER=minhn
+HOST=DESKTOP-219LV7Q
+DATE=2016/11/28-18:32:37-EST
+DESCRIPTION= Driver for Mentor Graphics MUSBMHDRC peripheral controller.
