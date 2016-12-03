@@ -4,5 +4,5 @@ INSTALLNAME=startup-ti-am335x-beaglebone
 NAME=startup-ti-am335x-beaglebone
 USER=minhn
 HOST=DESKTOP-219LV7Q
-DATE=2016/11/28-22:33:40-EST
+DATE=2016/12/01-00:57:58-EST
 DESCRIPTION=TI AM335x Cortex-A8 startup

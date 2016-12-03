@@ -4,5 +4,5 @@ INSTALLNAME=devu-usbser-am335x-musbmhdrc.so
 NAME=devu-usbser-am335x-musbmhdrc.so
 USER=minhn
 HOST=DESKTOP-219LV7Q
-DATE=2016/11/28-18:32:39-EST
+DATE=2016/12/01-00:53:51-EST
 DESCRIPTION= Driver for Mentor Graphics MUSBMHDRC peripheral controller.

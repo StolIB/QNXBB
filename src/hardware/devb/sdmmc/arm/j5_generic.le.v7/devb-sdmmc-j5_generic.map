@@ -1121,4 +1121,4 @@ LOAD C:/qnx660/target/qnx6/armle-v7/lib/crtn.o
  *(.note.GNU-stack)
  *(.gnu_debuglink)
  *(.gnu.lto_*)
-OUTPUT(W:/QNXProjects/BB_BSP_JBN574/src/hardware/devb/sdmmc/arm/j5_generic.le.v7/devb-sdmmc-j5_generic elf32-littlearm)
+OUTPUT(W:/QNXProjects/QNXBB/src/hardware/devb/sdmmc/arm/j5_generic.le.v7/devb-sdmmc-j5_generic elf32-littlearm)
