@@ -184,22 +184,22 @@
 
     ##### Example of NCM device (Ethernet over USB) #####
     # Step 1 - Start USB device stack
-    io-usb-dcd -dusbncm-am335x-musbmhdrc ioport=0x47401400,irq=18,nodma,force_device_mode,inherit_cfg
-    waitfor /dev/io-usb-dcd/io-usb 4
-    waitfor /dev/io-usb-dcd/devu-usbncm-am335x-musbmhdrc.so 4
+    #io-usb-dcd -dusbncm-am335x-musbmhdrc ioport=0x47401400,irq=18,nodma,force_device_mode,inherit_cfg
+    #waitfor /dev/io-usb-dcd/io-usb 4
+    #waitfor /dev/io-usb-dcd/devu-usbncm-am335x-musbmhdrc.so 4
 
     # Step 2 - Start USB NCM function driver
     # For best performance attach the usbdnet driver to an existing io-pkt stack. Alternatively multiple
-     io-pkt stacks can be used (see SDP documentation for more details). 
-    mount -Tio-pkt -o mac=123456789abc,protocol=ncm devnp-usbdnet.so
-    ulink_ctrl -l1
+    # io-pkt stacks can be used (see SDP documentation for more details). 
+    #mount -Tio-pkt -o mac=123456789abc,protocol=ncm devnp-usbdnet.so
+    #ulink_ctrl -l1
 
     # Step 3 - Assign IP address to ncm interface using DHCP OR any static IP.
-    if_up -p ncm0
+    #if_up -p ncm0
     
     #ifconfig ncm0 192.168.10.100
     # OR
-    dhcp.client -i ncm0 -A0 &
+    #dhcp.client -i ncm0 -A0 &
     
     
 
@@ -260,8 +260,8 @@ fs-cd.so
 ###########################################################################
 ## uncomment for USB Host controller driver
 ###########################################################################
-devu-dm816x-mg.so
-libusbdi.so
+#devu-dm816x-mg.so
+#libusbdi.so
 
 ###########################################################################
 ## uncomment for USB Device Controller drivers
